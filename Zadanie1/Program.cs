@@ -1,7 +1,4 @@
 ﻿// Метод 1, ничего не возвращают и не принемают
-using System.Data;
-using System.Xml.XPath;
-
 void Method1()
 {
     Console.WriteLine("Автор...:");
@@ -10,9 +7,9 @@ void Method1()
 Method1();
 
 //Метод, которые ничего не возвращают, но что-то принемают
-void Method2(string msg)
+void Method2(string msg) //Void - Ключевое слово, Method2 иднетификатор, и кол-во аргументов
 {
-    Console.WriteLine(msg);
+    Console.WriteLine(msg); //Указываем и используем операторов
 }
 Method2("Текст сообщения");
 _____________________________
@@ -28,7 +25,7 @@ void Method21(string msg, int count)
 
 }
 
-Method21("Текст", 4);
+Method21("Текст", 4); //Method21(msg:"Текст", count: 4) - Именованные аргументы
 
 //Метод, не принемает ,но возвращает
 
@@ -44,13 +41,13 @@ Console.WriteLine(year);
 
 //string Method4(int count, string c)
 //{
-//int i = 0;
-//string result = string.Empty;
+//int i = 0; 
+//string result = string.Empty; //переменная конечного результата
 
-//while (i < count)
+//while (i < count) 
 //{
   //  result = result + text;
-
+//    i++;
 //}
 //return result;
 //}
@@ -59,12 +56,11 @@ Console.WriteLine(year);
 //Console.WriteLine(res);
 
 
-
+//Цикл фор
 string Method4(int count, string c)
 {
-
 string result = string.Empty;
-for(int i = 0; i < count; i++)
+for(int i = 0; i < count; i++) //Инициализация счетчика
 {
    result = result + text;
 }
@@ -74,7 +70,7 @@ return result;
 string res = Method4(10, "ffre");
 Console.WriteLine(res);
 
-//Цикл в цикле
+//Цикл в цикле // таблица умножения
 
 for(int i = 2; i < 10; i++)
 {
@@ -83,3 +79,5 @@ for(int i = 2; i < 10; i++)
        Console.WriteLine($"{i} * {j} = {i * j}");
     }
 }
+
+
