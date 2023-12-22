@@ -1,2 +1,59 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Метод 1, ничего не возвращают и не принемают
+using System.Data;
+using System.Xml.XPath;
+
+void Method1()
+{
+    Console.WriteLine("Автор...:");
+}
+//Как вызываются эти методы
+Method1();
+
+//Метод, которые ничего не возвращают, но что-то принемают
+void Method2(string msg)
+{
+    Console.WriteLine(msg);
+}
+Method2("Текст сообщения");
+_____________________________
+
+void Method21(string msg, int count)
+{
+    int i = 0;
+    while (i < count)
+    {
+       Console.WriteLine(msg);
+       i++;
+    }
+
+}
+
+Method21("Текст", 4);
+
+//Метод, не принемает ,но возвращает
+
+int Method3()
+{
+    return DateTime.Now.Year;
+}
+
+int year = Method3();
+Console.WriteLine(year);
+
+//Метод, что-то принемает и что-то возвращает
+
+string Method4(int count, string c)
+{
+int i = 0;
+string result = string.Empty;
+
+while (i < count)
+{
+    result = result + text;
+
+}
+return result;
+}
+
+string res = Method4(10, "ffre");
+Console.WriteLine(res);
