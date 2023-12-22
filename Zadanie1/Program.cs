@@ -42,18 +42,44 @@ Console.WriteLine(year);
 
 //Метод, что-то принемает и что-то возвращает
 
+//string Method4(int count, string c)
+//{
+//int i = 0;
+//string result = string.Empty;
+
+//while (i < count)
+//{
+  //  result = result + text;
+
+//}
+//return result;
+//}
+
+//string res = Method4(10, "ffre");
+//Console.WriteLine(res);
+
+
+
 string Method4(int count, string c)
 {
-int i = 0;
+
 string result = string.Empty;
-
-while (i < count)
+for(int i = 0; i < count; i++)
 {
-    result = result + text;
-
+   result = result + text;
 }
 return result;
 }
 
 string res = Method4(10, "ffre");
 Console.WriteLine(res);
+
+//Цикл в цикле
+
+for(int i = 2; i < 10; i++)
+{
+    for(int j = 2; i < 10; j++)
+    {
+       Console.WriteLine($"{i} * {j} = {i * j}");
+    }
+}
